@@ -39,12 +39,6 @@ A disk is a virtual hard drive that stores the operating system, applications, a
 
 Virtual Machine Scale Sets let you create and manage a group of identical, load-balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule. Scale sets provide high availability to your applications, and allow you to centrally manage, configure, and update a large number of VMs.
 
-## Showcasing these resources in Azure Portal
-
-> [!NOTE]
-> You can use Terraform to create the resources in Azure. The Terraform code is available in the **[solutions](../../solutions/chapter-1/README.md) folder**.
-> The Terraform is not generic and NOT enterprise ready and is just used to deploy the resources in your subscription to easily click through them.
-
 ## Labs
 
 ### Virtual Network

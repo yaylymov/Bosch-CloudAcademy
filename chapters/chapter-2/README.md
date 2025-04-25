@@ -1,4 +1,4 @@
-# Chapter 2 - Networking & IaaC
+# Chapter 2 - Networking & IaC
 
 ## Goal
 
@@ -83,23 +83,23 @@ Please follow the instructions in this lab: <https://learn.microsoft.com/en-us/a
 
 ### Terraform Intro
 
-You can use [01_intro](../../solutions/chapter-5/01_intro) as a starting point for a very simple example and validation if your terraform and azure cli setup is working.
+You can use [01_intro](../../solutions/chapter-2/01_intro) as a starting point for a very simple example and validation if your terraform and azure cli setup is working.
 
 ### Terraform Providers
 
-You can use [02_providers](../../solutions/chapter-5/02_providers) as a starting point for a very simple example to showcase multiple providers with aliases
+You can use [02_providers](../../solutions/chapter-2/02_providers) as a starting point for a very simple example to showcase multiple providers with aliases
 
 ### Terraform Variables, Locals and Outputs
 
-You can use [03_variables](../../solutions/chapter-5/03_variables) as a starting point for a minimalistic example to showcase variables, locals and outputs.
+You can use [03_variables](../../solutions/chapter-2/03_variables) as a starting point for a minimalistic example to showcase variables, locals and outputs.
 
 ### Terraform Expressions & Functions
 
-You can use [04_expressions](../../solutions/chapter-5/04_expressions) as a starting point for a minimalistic example to showcase expressions and functions.
+You can use [04_expressions](../../solutions/chapter-2/04_expressions) as a starting point for a minimalistic example to showcase expressions and functions.
 
 ### Terraform State Management, Terraform Import & Workspace
 
-You can use [05_state](../../solutions/chapter-5/05_state) as a starting point for a minimalistic example to showcase state management, terraform import and workspace.
+You can use [05_state](../../solutions/chapter-2/05_state) as a starting point for a minimalistic example to showcase state management, terraform import and workspace.
 
 ## Continue
 
