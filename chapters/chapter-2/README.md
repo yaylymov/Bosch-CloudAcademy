@@ -68,7 +68,7 @@ Set up Terraform and understand its basic structure.
 
 ### Terraform State Management, Terraform Import & Workspace
 
-> [!CAUTION]
+> [!IMPORTANT]
 > Please use the chapter **"Terraform State Management, Terraform Import & Workspace"** from the slides: <https://microsofteur-my.sharepoint.com/:p:/g/personal/joergjo_microsoft_com/EeK5S2BZyuRFu1kN-t9ICuEBPcywO-wWjh9YcKepB9tEQQ?e=YQYUAp>
 
 ## Labs
