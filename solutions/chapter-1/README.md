@@ -1,6 +1,27 @@
 # Solutions Chapter 1 - Lab: VNet, VMs and Azure Portal
 
-## Overview
+## RBAC Tutorial
+
+This is the scope of resources that the access applies to:
+![Scope Overview](images/rbac-scope.png)
+
+1. Select the resource (e.g., a Virtual Machine or Resource Group) for which you want to assign a role.
+![Resource Overview](images/resource.png)
+2. Go to the **Access control (IAM)** section.
+3. Click **Add** > **Add role assignment**.
+![IAM Overview](images/iam.png)
+4. Select a role (e.g., "Reader" or "Contributor").
+![Reader Overview](images/reader-iam.png)
+5. Click **Select members** > Assign the role to a user, group, or service principal.
+![Select Members](images/select-members.png)
+6. After you have selected, you will see this screen:
+![Select Members 2](images/selected-members2.png)
+7. Check assignment types. Make it Active, so that the user can use it anytime.
+![Type](images/type.png)
+8. Click **Review + assign** and verify the role assignment.
+![Result](images/result.png)
+
+## Terraform  Overview
 
 This Terraform configuration sets up basic Azure infrastructure, including a resource group, a virtual network, a subnet, and a network interface. It's designed to provide a simple example of how to use Terraform to manage Azure resources and to click through the resources in the Azure Portal for showcasing purposes.
 

@@ -2,10 +2,11 @@
 
 ## Goal
 
-This chapter is all about learning about Azure Fundamentals such as: Virtual Networks, Virtual Machines, and Azure Portal. You will learn how to create and manage Virtual Networks, Virtual Machines, and other resources in Azure.
+This chapter is all about learning about Azure Fundamentals such as: Virtual Networks, Virtual Machines, Azure Portal and Role Assignment. You will learn how to create and manage Virtual Networks, Virtual Machines, and other resources in Azure.
 
 In this chapter we will cover the following topics:
 
+- Role Assignment for a resource
 - Introduction into Azure Portal
 - Create and explain a VNet, VM, NSG
 - Create and explain a VM with Disk(s)
@@ -18,6 +19,27 @@ In this chapter we will cover the following topics:
 >
 > - [Azure Virtual Network](https://microsofteur-my.sharepoint.com/:p:/g/personal/joergjo_microsoft_com/EVHMQ0ucXChAlIAftPJ2jswB_GXWEqCzaaFbCGpXLz4Ynw?e=w3zw8O)
 > - [Azure Virtual Machine](https://microsofteur-my.sharepoint.com/:p:/g/personal/joergjo_microsoft_com/ET7XuWLkqWJMsWDTlUi0HzIBssxAZFGEq9dtAgqkh9nTuA?e=ImXb7P)
+
+### Role Assignment (RBAC)
+
+Role-based access control (RBAC) in Azure allows you to manage who has access to Azure resources, what they can do with those resources, and what areas they have access to. Role assignments are a key part of RBAC.
+
+A role assignment consists of three elements:
+
+1. **Security Principal**: This can be a user, group, service principal, or managed identity.
+2. **Role Definition**: A collection of permissions, such as "Reader," "Contributor," or "Owner."
+3. **Scope**: The level at which access applies, such as a subscription, resource group, or specific resource.
+
+To assign a role:
+
+1. Identify the resource you want to secure.
+2. Choose the appropriate role definition.
+3. Assign the role to a security principal at the desired scope.
+
+> [!NOTE]
+> Use the principle of least privilege when assigning roles to ensure users only have the permissions they need.
+
+For more details, refer to the official documentation: [Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview).
 
 ### Virtual Network (VNet)
 
@@ -40,6 +62,28 @@ A disk is a virtual hard drive that stores the operating system, applications, a
 Virtual Machine Scale Sets let you create and manage a group of identical, load-balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule. Scale sets provide high availability to your applications, and allow you to centrally manage, configure, and update a large number of VMs.
 
 ## Labs
+
+### Role Assignment
+
+> [!IMPORTANT]
+> Please follow the instructions in this lab: <https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal>
+
+#### Lab Steps
+
+1. Navigate to the Azure Portal.
+2. Select the resource (e.g., a Virtual Machine or Resource Group) for which you want to assign a role.
+3. Go to the **Access control (IAM)** section.
+4. Click **Add** > **Add role assignment**.
+5. Select a role (e.g., "Reader" or "Contributor").
+6. Assign the role to a user, group, or service principal.
+7. Save the changes and verify the role assignment.
+
+> [!TIP]
+> Use the Azure CLI for automation:
+
+```bash
+az role assignment create --assignee <user-email-or-object-id> --role <role-name> --scope <resource-scope>
+```
 
 ### Virtual Network
 
